@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="519a941283805610f7a998c6feaad377" label="correspondence_tracking" max_length="40" name="x_1513386_hoa_correspondence_tracking" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Correspondence Name" max_length="140" name="correspondence_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="pending_confirmation" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Acknowledgement Received" value="acknowledgement_received"/>
+                <element inactive_on_update="false" label="Pending Confirmation" value="pending_confirmation"/>
+                <element inactive_on_update="false" label="Failed" value="failed"/>
+                <element inactive_on_update="false" label="Final Acknowledgement Received" value="final_acknowledgement_received"/>
+                <element inactive_on_update="false" label="Final Pending Confirmation" value="final_pending_confirmation"/>
+                <element inactive_on_update="false" label="Delivered" value="delivered"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Communication Log" max_length="4000" name="communication_log" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="fax" label="Delivery Type" mandatory="true" max_length="40" name="delivery_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SMS" value="sms"/>
+                <element inactive_on_update="false" label="Email" value="email"/>
+                <element inactive_on_update="false" label="Mail" value="mail"/>
+                <element inactive_on_update="false" label="Fax" value="fax"/>
+            </choice>
+        </element>
+    </element>
+</database>

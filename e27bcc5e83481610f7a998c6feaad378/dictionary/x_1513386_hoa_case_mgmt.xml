@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4f79d81683405610f7a998c6feaad3ea" label="case_mgmt" max_length="40" name="x_1513386_hoa_case_mgmt" type="collection">
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Property" max_length="32" name="property" reference="x_1513386_hoa_property" type="reference"/>
+        <element label="House Owner" max_length="32" name="house_owner" reference="x_1513386_hoa_house_owner" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="open" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Received" value="received"/>
+                <element inactive_on_update="false" label="Open" value="open"/>
+                <element inactive_on_update="false" label="In Progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Complete" value="complete"/>
+                <element inactive_on_update="false" label="Partially Done" value="partially_done"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="notification_is_sent" label="Status Reason" mandatory="true" max_length="40" name="status_reason" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Final Notification is Sent" value="final_notification_is_sent"/>
+                <element inactive_on_update="false" label="Issue Resolved" value="issue_resolved"/>
+                <element inactive_on_update="false" label="Process Initiated" value="process_initiated"/>
+                <element inactive_on_update="false" label="Final Acknowledgement Received" value="final_acknowledgement_received"/>
+                <element inactive_on_update="false" label="Notification is Sent" value="notification_is_sent"/>
+                <element inactive_on_update="false" label="Acknowledgement Received" value="acknowledgement_received"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Completion Datetime" max_length="40" name="completion_datetime" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="weed_control" label="Issue type" mandatory="true" max_length="40" name="issue_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Edging" value="edging"/>
+                <element inactive_on_update="false" label="Weed Control" value="weed_control"/>
+                <element inactive_on_update="false" label="Plant" value="plant"/>
+                <element inactive_on_update="false" label="Payment" value="payment"/>
+                <element inactive_on_update="false" label="Grass Control" value="grass_control"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="lawn" label="Subject" mandatory="true" max_length="40" name="subject" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lawn" value="lawn"/>
+                <element inactive_on_update="false" label="Payment" value="payment"/>
+            </choice>
+        </element>
+        <element label="Case Owner" max_length="32" name="case_owner" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="case_owner"/>
+        </index>
+        <index name="index2">
+            <element name="house_owner"/>
+        </index>
+        <index name="index3">
+            <element name="property"/>
+        </index>
+    </element>
+</database>

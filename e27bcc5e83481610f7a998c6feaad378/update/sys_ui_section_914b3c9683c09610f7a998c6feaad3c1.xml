@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="SLA" section_id="914b3c9683c09610f7a998c6feaad3c1" sys_domain="global" table="x_1513386_hoa_case_mgmt" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_date</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-18 04:44:08</sys_created_on>
+            <sys_id>1d4b70d683c09610f7a998c6feaad38e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="SLA" display_value="SLA" name="x_1513386_hoa_case_mgmt" sys_domain="global" view="Default view">914b3c9683c09610f7a998c6feaad3c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-18 04:44:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-18 04:44:08</sys_created_on>
+            <sys_id>154b70d683c09610f7a998c6feaad38f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="SLA" display_value="SLA" name="x_1513386_hoa_case_mgmt" sys_domain="global" view="Default view">914b3c9683c09610f7a998c6feaad3c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-18 04:44:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>completion_datetime</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-18 04:44:08</sys_created_on>
+            <sys_id>1d4b70d683c09610f7a998c6feaad38f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="SLA" display_value="SLA" name="x_1513386_hoa_case_mgmt" sys_domain="global" view="Default view">914b3c9683c09610f7a998c6feaad3c1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-18 04:44:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>SLA</caption>
+            <header>false</header>
+            <name>x_1513386_hoa_case_mgmt</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-18 04:44:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>914b3c9683c09610f7a998c6feaad3c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1513386_hoa_case_mgmt</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="HOA" source="x_1513386_hoa">e27bcc5e83481610f7a998c6feaad378</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HOA">e27bcc5e83481610f7a998c6feaad378</sys_scope>
+            <sys_update_name>sys_ui_section_914b3c9683c09610f7a998c6feaad3c1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-18 04:44:07</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
