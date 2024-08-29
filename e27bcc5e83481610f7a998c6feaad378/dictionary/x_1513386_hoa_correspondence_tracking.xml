@@ -13,6 +13,7 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Communication Log" max_length="4000" name="communication_log" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Case Mgmt" max_length="32" name="case_mgmt" reference="x_1513386_hoa_case_mgmt" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="fax" label="Delivery Type" mandatory="true" max_length="40" name="delivery_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="SMS" value="sms"/>
@@ -21,5 +22,8 @@
                 <element inactive_on_update="false" label="Fax" value="fax"/>
             </choice>
         </element>
+        <index name="index">
+            <element name="case_mgmt"/>
+        </index>
     </element>
 </database>
